@@ -1,0 +1,40 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "personId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "riskData",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "profileDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "finScore",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "wealthProjected",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "wealthActual",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "socialScore",
+            "fieldType": "Double"
+        }
+    ],
+    "changelogDate": "20170716153506",
+    "entityTableName": "risk_profile",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "angularJSSuffix": "finProf"
+}

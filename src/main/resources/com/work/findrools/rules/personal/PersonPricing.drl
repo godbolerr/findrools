@@ -1,0 +1,13 @@
+package com.work.findrools.rules.personal;
+
+import com.work.findrools.rules.Driver;
+import com.work.findrools.rules.Policy;
+
+rule "Pricing Rule For Driver"
+    when
+        Driver ( age == 22 )
+        $p: Policy ( )
+    then
+        $p.setBasePrice(100);
+        System.out.println("Base price set for driver is 100 ");
+end

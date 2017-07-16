@@ -1,0 +1,24 @@
+template header
+age[]
+priorClaims
+policyType
+discount
+
+package com.work.findrools.rules.decisionTable;
+
+
+template "discounts"
+age
+priorClaims
+policyType
+discount
+
+rule "Discounts_New@{row.rowNumber}"
+
+    when
+        com.work.findrools.rules.Driver(age >= @{age0}, age <= @{age1}, priorClaims == "@{priorClaims}")
+        policy: com.work.findrools.rules.Policy(type == "@{policyType}")
+    then
+        policy.applyDiscount(@{discount});
+end
+end template

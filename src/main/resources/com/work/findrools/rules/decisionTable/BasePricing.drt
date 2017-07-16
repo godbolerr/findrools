@@ -1,0 +1,29 @@
+template header
+age[]
+profile
+priorClaims
+policyType
+base
+reason
+
+package com.work.findrools.rules.decisionTable;
+
+
+template "Pricing bracket DT"
+age
+policyType
+base
+
+rule "Pricing bracket_New@{row.rowNumber}"
+
+    when
+        com.work.findrools.rules.Driver(age >= @{age0}, age <= @{age1}
+            , priorClaims == "@{priorClaims}"
+            , locationRiskProfile == "@{profile}"
+        )
+        policy: com.work.findrools.rules.Policy(type == "@{policyType}")
+    then
+        policy.setBasePrice(@{base});
+        System.out.println("@{reason}");
+end
+end template

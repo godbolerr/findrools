@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule">
+    
+    <kbase name="RuleTemplateData" packages="com.work.findrools.rules">
+        <ruleTemplate dtable="com/work/findrools/rules/ExamplePolicyPricingTemplateData.xls"
+                      template="com/work/findrools/rules/BasePricing.drt"
+                      row="3" col="3"/>
+        <ruleTemplate dtable="com/work/findrools/rules/ExamplePolicyPricingTemplateData.xls"
+                      template="com/work/findrools/rules/PromotionalPricing.drt"
+                      row="18" col="3"/>
+        <ksession name="RuleTemplateDataSession"/>
+    </kbase>    
+    
+     <kbase name="FindDroolsKb" packages="com.work.findrools.rules.personal">
+        <ksession name="FindDroolsSession"/>
+    </kbase>   
+    
+    
+    
+    <kbase name="FindDroolsSessionDecisionTableKb" packages="com.work.findrools.rules.decisionTable">
+        <ksession name="FindDroolsSessionDecisionTable"/>
+    </kbase>    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</kmodule>

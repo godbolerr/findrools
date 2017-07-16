@@ -1,0 +1,24 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "profKey",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "profValue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "category",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170716153505",
+    "entityTableName": "prof_setting",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "angularJSSuffix": "finProf"
+}

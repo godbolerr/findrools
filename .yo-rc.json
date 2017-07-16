@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.work.findrools",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "4.5.5",
+    "baseName": "findrools",
+    "packageName": "com.work.findrools",
+    "packageFolder": "com/work/findrools",
+    "serverPort": "8087",
+    "authenticationType": "jwt",
+    "hibernateCache": "no",
+    "clusteredHttpSession": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSocialSignIn": false,
+    "jwtSecretKey": "4855fa443571e0fa324c6e6dcb58f9188475f3e1",
+    "enableTranslation": true,
+    "applicationType": "microservice",
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "skipClient": true,
+    "skipUserManagement": true,
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "hi",
+      "mr"
+    ],
+    "clientPackageManager": "npm"
+  }
+}
